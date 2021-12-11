@@ -10,7 +10,12 @@ You can refer to [this wiki page](https://github.com/zadam/trilium/wiki/Themes) 
 - Provide options at begin of css for anyone who want to customize your own favors (colors, spacing, etc.)
 - Perfect Alignment (better than bear note), especially for CJK characters
 
-## TODOs
+## Screenshots
+
+![bear-white](screenshots/bear-white.png)
+![bear-dark](screenshots/bear-dark.png)
+
+## Todos
 
 Important
 
