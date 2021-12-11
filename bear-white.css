@@ -1,0 +1,365 @@
+:root {
+  --bear-accented-color: #cc5654;
+  --bear-background-color: #fbfbfb;
+  --bear-accented-background-color: #fff;
+  --bear-text-color: #424242;
+  --bear-text-operator-color: #888;
+  --bear-preview-text-color: #a0a0a0;
+  --bear-default-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --bear-monospace-font: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+    Liberation Mono, monospace;
+  --bear-line-height: 1.7;
+  --bear-line-padding: 6rem;
+  --bear-paragraph-spacing: 0;
+  --bear-left-pane-background-color: #2f3235;
+  --bear-left-pane-text-color: #cfcfcf;
+  --bear-active-item-background-color: #424747;
+  --bear-active-item-text-color: #fff;
+  --bear-header-text-color: #424242;
+  --bear-selection-color: #f1dfdf;
+
+  --theme-style: light;
+
+  --main-font-family: var(--bear-default-font);
+  --main-font-size: normal;
+
+  --tree-font-family: var(--bear-default-font);
+  --tree-font-size: normal;
+
+  --detail-font-family: var(--bear-default-font);
+  --detail-font-size: normal;
+
+  --monospace-font-family: var(--bear-monospace-font);
+  --monospace-font-size: normal;
+
+  --main-background-color: var(--bear-background-color);
+  --main-text-color: var(--bear-text-color);
+  --main-border-color: #323232;
+
+  --accented-background-color: var(--bear-accented-background-color);
+  --more-accented-background-color: var(--bear-accented-background-color);
+
+  --button-background-color: transparent;
+  --button-disabled-background-color: #ddd;
+  --button-border-color: #ddd;
+  --button-text-color: black;
+  --button-border-radius: 5px;
+
+  --primary-button-background-color: #6c757d;
+  --primary-button-text-color: white;
+  --primary-button-border-color: #6c757d;
+
+  --muted-text-color: var(--bear-preview-text-color);
+
+  --input-text-color: black;
+  --input-background-color: transparent;
+
+  --hover-item-text-color: var(--bear-active-item-text-color);
+  --hover-item-background-color: var(--bear-active-item-background-color);
+
+  --active-item-text-color: var(--bear-active-item-text-color);
+  --active-item-background-color: var(--bear-active-item-background-color);
+
+  --menu-text-color: black;
+  --menu-background-color: white;
+
+  --modal-background-color: white;
+  --modal-backdrop-color: black;
+
+  --left-pane-background-color: var(--bear-left-pane-background-color);
+  --left-pane-text-color: var(--bear-left-pane-text-color);
+
+  --launcher-pane-background-color: var(--bear-left-pane-background-color);
+  --launcher-pane-text-color: var(--bear-left-pane-text-color);
+
+  --active-tab-background-color: #ddd;
+  --active-tab-text-color: black;
+
+  --inactive-tab-background-color: #f0f0f0;
+  --inactive-tab-text-color: #666;
+
+  --scrollbar-border-color: #ddd;
+  --tooltip-background-color: #f8f8f8;
+  --link-color: var(--bear-accented-color);
+
+  --mermaid-theme: default;
+
+  --ck-color-link-selected-background: var(--bear-selection-color);
+}
+
+body .global-menu-button {
+  background-image: url("../../../images/icon-grey.png");
+}
+
+body span.fancytree-active .fancytree-title {
+  font-weight: normal;
+}
+
+body .ribbon-container,
+body #launcher-pane,
+body #left-pane {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body ::selection {
+  background: var(--bear-selection-color);
+}
+
+body .katex {
+  font-size: 1.15em;
+}
+
+/* Global Spacing */
+
+body .ck.ck-content {
+  padding: 0 var(--bear-line-padding);
+}
+
+body .note-book-card .ck-content {
+  padding: 0 2rem;
+}
+
+body .ck-content h2,
+body .ck-content h3,
+body .ck-content h4,
+body .ck-content h5,
+body .ck-content p,
+body .ck-content dl,
+body .ck-content ol,
+body .ck-content ul,
+body .ck-content .katex-display,
+body .ck-content .todo-list,
+body .ck-content .todo-list label,
+body .ck-content .todo-list li,
+body .ck-content .todo-list li .todo-list {
+  margin: 0;
+}
+
+body .ck-content p,
+body .ck-content li,
+body .ck-content h2,
+body .ck-content h3,
+body .ck-content h4,
+body .ck-content h5 {
+  line-height: var(--bear-line-height);
+}
+
+/* Header Style */
+
+body .ck-content h2,
+body .ck-content h3,
+body .ck-content h4,
+body .ck-content h5 {
+  text-indent: -1rem;
+  color: var(--bear-header-text-color);
+}
+
+body .ck-content h2:not(.ck-placeholder)::before {
+  content: "H2";
+  color: var(--bear-text-operator-color);
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  width: 1rem;
+  font-size: 1rem;
+  padding-right: 0.5rem;
+}
+
+body .ck-content h3:not(.ck-placeholder)::before {
+  content: "H3";
+  color: var(--bear-text-operator-color);
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  width: 1rem;
+  font-size: 1rem;
+  padding-right: 0.5rem;
+}
+
+body .ck-content h4:not(.ck-placeholder)::before {
+  content: "H4";
+  color: var(--bear-text-operator-color);
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  width: 1rem;
+  font-size: 1rem;
+  padding-right: 0.5rem;
+}
+
+body .ck-content h5:not(.ck-placeholder)::before {
+  content: "H5";
+  color: var(--bear-text-operator-color);
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  width: 1rem;
+  font-size: 1rem;
+  padding-right: 0.5rem;
+}
+
+/* List Style */
+
+body .ck-content ul:not(.todo-list) {
+  position: relative;
+  left: -2rem;
+}
+
+body .ck-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+body .ck-content ul ul {
+  padding-left: 2rem;
+}
+
+body .ck-content ul:not(.todo-list) li {
+  display: table-row;
+}
+
+body .ck-content ul:not(.todo-list) li::before {
+  content: "•";
+  color: var(--bear-accented-color);
+  display: table-cell;
+  position: relative;
+  width: 2rem;
+  text-align: center;
+}
+
+body .ck-content ol {
+  position: relative;
+  left: -2rem;
+}
+
+body .ck-content ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: my-awesome-counter;
+}
+
+body .ck-content ol ol {
+  padding-left: 2rem;
+}
+
+body .ck-content ol li {
+  counter-increment: my-awesome-counter;
+  display: table-row;
+}
+
+body .ck-content ol li::before {
+  content: counter(my-awesome-counter) ".";
+  color: var(--bear-accented-color);
+  display: table-cell;
+  position: relative;
+  width: 2rem;
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+body .ck-content .todo-list span.todo-list__label__description {
+  text-indent: -1px;
+  display: inline-block;
+}
+
+/* Code Style */
+
+body .ck-content pre,
+body .ck-content *:not(pre) code {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--bear-text-operator-color);
+  margin: 0;
+}
+
+body .ck-content *:not(pre) code {
+  margin: 0 0.2rem;
+}
+
+body .ck-content *:not(pre) .ck-code_selected {
+  background-color: transparent !important;
+}
+
+/* Quote Style */
+
+body .ck-content blockquote {
+  margin: 0;
+  font-style: normal;
+  border-left: 0.2rem solid var(--bear-accented-color);
+  padding-left: 0.9rem;
+  position: relative;
+  right: 1.1rem;
+}
+
+/* Horizontal Line Style */
+
+body .ck-content .ck-horizontal-line > hr {
+  margin-top: 0.7rem !important;
+  margin-bottom: 0.7rem;
+  height: 1px;
+  background: var(--bear-text-operator-color);
+}
+
+/* Table Style */
+
+body .ck-content .table table td,
+body .ck-content .table table th {
+  vertical-align: middle;
+}
+
+body
+  .ck-content
+  .ck-widget.table
+  td.ck-editor__nested-editable.ck-editor__nested-editable_focused,
+body .ck-content .ck-widget.table td.ck-editor__nested-editable:focus,
+body
+  .ck-content
+  .ck-widget.table
+  th.ck-editor__nested-editable.ck-editor__nested-editable_focused,
+body .ck-content .ck-widget.table th.ck-editor__nested-editable:focus {
+  outline: none !important;
+}
+
+/* Inline Style */
+
+body .ck-content u {
+  text-decoration-color: var(--bear-accented-color);
+  text-underline-offset: 0.1rem;
+}
+
+body .ck-content s {
+  color: var(--bear-text-operator-color);
+}
+
+body .ck-content a:hover,
+body .ck-content a[href^="http"]:hover {
+  text-decoration: none;
+  cursor: pointer !important;
+}
+
+body .ck-content a[href^="http"]:before {
+  content: "[";
+  color: var(--bear-text-operator-color);
+}
+
+body .ck-content a[href^="http"]:after {
+  content: "](\ea9f)";
+  color: var(--bear-text-operator-color);
+  vertical-align: baseline;
+  font-size: inherit;
+  font-family: "boxicons";
+}
+
+body .ck-content a[href^="#"]:before {
+  content: "[[";
+  color: var(--bear-text-operator-color);
+}
+
+body .ck-content a[href^="#"]:after {
+  content: "]]";
+  color: var(--bear-text-operator-color);
+}
