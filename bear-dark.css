@@ -88,8 +88,9 @@
   --ck-color-link-selected-background: var(--bear-selection-color);
 }
 
+/* another choice that looks nice here is icon-color.png */
 body .global-menu-button {
-  background-image: url("../../../images/icon-grey.png");
+  background-image: url("/assets/vX/images/icon-grey.png");
 }
 
 body ::-webkit-calendar-picker-indicator {
